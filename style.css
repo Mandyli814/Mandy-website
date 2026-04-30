@@ -431,3 +431,168 @@ footer {
 html {
     scroll-behavior: smooth;
 }
+/* ===== 手機響應式設計 ===== */
+@media (max-width: 768px) {
+
+    /* 頁首：Logo 和導覽列改成上下堆疊 */
+    header .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+        padding: 6px 10px;
+    }
+
+    /* 主視覺：縮小字體、減少上下內距 */
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 12px 24px;
+    }
+
+    /* 關於我們：文字和統計數字上下堆疊 */
+    .about-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-stats {
+        justify-content: center;
+    }
+
+    .stat {
+        min-width: 80px;
+        padding: 15px;
+    }
+
+    .stat span {
+        font-size: 1.8rem;
+    }
+
+    /* 產品規格卡片：一行兩個 */
+    .product-specs {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .spec-card {
+        padding: 20px 12px;
+    }
+
+    .spec-icon {
+        font-size: 2rem;
+    }
+
+    .spec-card p {
+        font-size: 0.9rem;
+    }
+
+    /* 性格特質區塊 */
+    .personality {
+        padding: 25px 15px;
+    }
+
+    .traits {
+        gap: 8px;
+    }
+
+    .tag {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    /* 時間線：把左邊的線和圓點適配窄螢幕 */
+    .timeline-container {
+        padding-left: 30px;
+    }
+
+    .timeline-container::before {
+        left: 10px;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 25px;
+    }
+
+    .timeline-item::before {
+        left: -24px;
+        top: 6px;
+        width: 12px;
+        height: 12px;
+    }
+
+    .year {
+        font-size: 0.8rem;
+        padding: 5px 12px;
+        align-self: flex-start;
+    }
+
+    .event {
+        padding: 15px;
+    }
+
+    .event h4 {
+        font-size: 1rem;
+    }
+
+    .event p {
+        font-size: 0.85rem;
+    }
+
+    /* 聯絡我們：手機保持三個並排 */
+.contact-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.contact-item {
+    padding: 15px 8px;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+}
+
+.contact-item h3 {
+    font-size: 0.8rem;
+}
+
+
+    /* 通用字體大小調整 */
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+}
