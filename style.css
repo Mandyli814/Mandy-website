@@ -476,17 +476,20 @@ html {
     }
 
     .about-stats {
-        justify-content: center;
-    }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    justify-content: center;
+}
 
-    .stat {
-        min-width: 80px;
-        padding: 15px;
-    }
+.stat {
+    min-width: auto;
+    padding: 18px 12px;
+}
 
-    .stat span {
-        font-size: 1.8rem;
-    }
+.stat span {
+    font-size: 1.6rem;
+}
 
     /* 產品規格卡片：一行兩個 */
     .product-specs {
