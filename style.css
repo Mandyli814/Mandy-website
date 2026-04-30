@@ -563,22 +563,45 @@ html {
         font-size: 0.85rem;
     }
 
-    /* 聯絡我們：手機保持三個並排 */
+/* 聯絡我們：手機垂直排列，名片式設計 */
 .contact-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
+    grid-template-columns: 1fr;
+    gap: 0;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    overflow: hidden;
 }
 
 .contact-item {
-    padding: 15px 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 16px 20px;
+    border-radius: 0;
+    background: white;
+    text-align: left;
+}
+
+.contact-item:not(:last-child) {
+    border-bottom: 1px solid #f0f0f0;
 }
 
 .contact-icon {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+    flex-shrink: 0;
+    width: 40px;
+    text-align: center;
 }
 
 .contact-item h3 {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
+    margin-bottom: 2px;
+}
+
+.contact-item p {
+    font-size: 0.85rem;
 }
 
 
